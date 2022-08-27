@@ -8,6 +8,11 @@ main {
  margin-top: 50px;
  padding: 15px;
  border-radius: 15px;
+ height: 600px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ flex: 1;
  h1 {
   display: block;
   text-align: center;
@@ -19,6 +24,7 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  justify-content: center;
   align-items: center;
   .m-leftSide {
    display: flex;
@@ -84,11 +90,14 @@ main {
 
  @media (max-width: 880px) {
   .m-container {
-   grid-template-columns: 1fr;
-
-   .m-rightSide {
-    padding: 20px;
+    grid-template-columns: 1fr;
+    
+    .m-rightSide {
+     padding: 20px;
+    }
+    .m-leftSide {
+     margin-top: 20px;
+    }
    }
   }
- }
 }
